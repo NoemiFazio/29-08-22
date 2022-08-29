@@ -1,0 +1,8 @@
+.AddTodo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  margin-left: calc(50% - 200px);
+  width: 400px;
+}
