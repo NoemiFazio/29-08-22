@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>To do list:</h1>
       <section className="App_form">
         <AddTodo list={list} setList={setList} />
       </section>

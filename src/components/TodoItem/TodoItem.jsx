@@ -7,8 +7,10 @@ function TodoItem({ todo, onDeleteTodo }) {
 
   return (
     <div className="TodoItem">
-      <h3>{todo.text}</h3>
-      <h5>{todo.date}</h5>
+      <div className="TodoItem_text">
+        <h3>{todo.text}</h3>
+        <h5>{todo.date}</h5>
+      </div>
       <button onClick={deleteHandler}>X</button>
     </div>
   );
