@@ -17,13 +17,20 @@ function App() {
     },
   ]);
 
+  const deleteItemHandler = (itemId) => {
+    setList((prevList) => {
+      const updatedList = prevList.filter((item) => item.id !== itemId);
+      return updatedList;
+    });
+  };
+
   return (
     <div className="App">
       <section className="App_form">
         <AddTodo list={list} setList={setList} />
       </section>
       <section className="App_todos">
-        <TodoList list={list} />
+        <TodoList list={list} onDeleteTodo={deleteItemHandler} />
       </section>
     </div>
   );
